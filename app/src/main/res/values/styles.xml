@@ -6,14 +6,21 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="actionMenuTextAppearance">
-            @android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title
-        </item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
+
+    <style name="NoTitleTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--保持标题栏字母大小写显示-->
+    <style name="ActionBarTextCaps" parent="AppTheme">
+        <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
